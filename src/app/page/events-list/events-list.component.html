@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <table class="table table-stripped">
-      <thead>
+    <table class="table table-striped mt-5 table-hover table-dark">
+      <thead class="">
         <tr>
           <td>Name</td>
           <td>Date</td>
@@ -15,9 +15,7 @@
           <td>{{ event.date }}</td>
           <td>{{ event.time }}</td>
           <td>
-            {{ event.location.address }}
-            {{ event.location.city }}
-            {{ event.location.country }}
+            {{ event.location.address }} - {{ event.location.city }} - {{ event.location.country }}
           </td>
         </tr>
       </tbody>
